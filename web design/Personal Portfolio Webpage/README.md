@@ -17,7 +17,7 @@ The page showcases my web development journey, featured projects, personal blog,
 
 ## 🚀 Live Demo
 
-🔗 [See the Live Portfolio on CodePen](https://codepen.io/ahmed-boutarfa/pen/XJbyeQm)  
+🔗 [See the Live Portfolio on CodePen](https://codepen.io/ahmed-boutarfa/full/XJbyeQm)  
 
 ---
 
@@ -46,3 +46,39 @@ The page showcases my web development journey, featured projects, personal blog,
 - 📱 **Fully responsive navigation menu** (hamburger on mobile)
 
 ---
+
+## 📂 Project Structure
+
+📁 portfolio/
+├── index.html # Main HTML structure
+├── styles.css # All custom styles
+├── app.js # JS logic: dark mode, translations, animations
+└── README.md # Project documentation
+
+##🌍 Multilingual Support
+
+const translations = {
+  en: { title: "My Portfolio", role: "a web developer" },
+  fr: { title: "Mon Portfolio", role: "développeur web" }
+}
+
+##🧠 What I Learned
+
+--Designing clean UI with CSS custom properties
+
+--Implementing dark/light theme toggle with localStorage
+
+--Creating multilingual content support
+
+--Using IntersectionObserver for scroll reveal effects
+
+--Building mobile-first responsive navigation menus
+
+--Enhancing accessibility and semantic structure
+
+##📬 Contact
+
+Ahmed Boutarfa
+
+📩 Email: ahmed.boutarfa.2003@gmail.com
+
