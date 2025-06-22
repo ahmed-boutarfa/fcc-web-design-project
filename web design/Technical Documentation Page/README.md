@@ -60,10 +60,13 @@ This project is a **Technical Documentation Page** about the PHP programming lan
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/php-docs-project.git
+   
+    git clone https://github.com/ahmed-boutarfa/fcc-web-design-project.git
 
 2. Open index.html in your browser.
 
 ✍️ Author
+
 Ahmed Boutarfa
+
 📧 Email: ahmed.boutarfa.2003@gmail.com
