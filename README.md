@@ -61,11 +61,11 @@ Now that I’ve built a solid foundation in responsive web design, my next goals
 
 ## 📄 Certification
 
-You can view my FreeCodeCamp certificate [here]([#](https://www.freecodecamp.org/certification/ahmed-boutarfa/responsive-web-design))
+You can view my FreeCodeCamp certificate [here](https://www.freecodecamp.org/certification/ahmed-boutarfa/responsive-web-design)
 ---
 
 ## 🌍 Author
 
 **Ahmed Boutarfa**  
 Aspiring Full-Stack Web Developer  
-[GitHub Profile]([https://github.com/ahmed-boutarfa])
+[GitHub Profile](https://github.com/ahmed-boutarfa)
