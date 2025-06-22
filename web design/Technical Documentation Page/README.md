@@ -65,7 +65,7 @@ This project is a **Technical Documentation Page** about the PHP programming lan
 
 2. Open index.html in your browser.
 
-✍️ Author
+## ✍️ Author
 
 Ahmed Boutarfa
 
