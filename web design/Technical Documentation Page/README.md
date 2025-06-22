@@ -33,7 +33,9 @@ This project is a **Technical Documentation Page** about the PHP programming lan
 ## 🧱 Structure Overview
 
 ├── index.html
+
 ├── styles.css
+
 ├── script.js
 
 
