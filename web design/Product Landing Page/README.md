@@ -38,11 +38,17 @@ Through this project, I practiced and improved my skills in:
 ## 📂 Folder Structure
 
 ├── index.html
+
 ├── style.css
+
 ├── app.js
+
 ├── image/
+
 │ ├── logo.jfif
+
 │ ├── pro.PNG
+
 │ └── basic.PNG
 
 
