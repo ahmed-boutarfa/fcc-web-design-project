@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="title">My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo"><h1>AB</h1></div>
+      <button id="menu-toggle" class="corseur" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav id="navbar">
+        <ul class="nav-lists">
+          <li><a href="#welcome-section" data-i18n="about">About</a></li>
+          <li><a href="#projects" data-i18n="projects">Projects</a></li>
+          <li><a href="#faq" data-i18n="faqTitle">FAQ</a></li>
+          <li><a href="#timeline" data-i18n="timelineTitle">Timeline</a></li>
+          <li><a href="#blog" data-i18n="blogTitle">Blog</a></li>
+          <li><a href="#contact-section" data-i18n="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="controls">
+        <button id="darkModeBtn" class="corseur">🌙</button>
+        <select id="langSelect" class="corseur">
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+        </select>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="welcome" id="welcome-section">
+        <div class="welcome-div">
+          <h1 data-i18n="hello">Hey I am Ahmed Boutarfa</h1>
+          <p data-i18n="role">a web developer</p>
+        </div>
+      </section>
+
+      <section class="project" id="projects">
+        <h2 data-i18n="projectTitle">These are some of my projects</h2>
+        <hr />
+        <div class="projects-div">
+          <a class="project project-tile" href="https://tribute-page.freecodecamp.rocks/" target="_blank">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" class="project-img" alt="project">
+            <p class="project-title">Tribute Page</p>
+          </a>
+          <a class="project project-tile" href="https://tribute-page.freecodecamp.rocks/" target="_blank">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" class="project-img" alt="project">
+            <p class="project-title">Random Quote Machine</p>
+          </a>
+          <a class="project project-tile" href="https://tribute-page.freecodecamp.rocks/" target="_blank">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" class="project-img" alt="project">
+            <p class="project-title">JavaScript Calculator</p>
+          </a>
+          <a class="project project-tile" href="https://tribute-page.freecodecamp.rocks/" target="_blank">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" class="project-img" alt="project">
+            <p class="project-title">Map Data Across the Globe</p>
+          </a>
+          <a class="project project-tile" href="https://tribute-page.freecodecamp.rocks/" target="_blank">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" class="project-img" alt="project">
+            <p class="project-title"> Wikipedia Viewer</p>
+          </a>
+          <a class="project project-tile" href="https://tribute-page.freecodecamp.rocks/" target="_blank">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" class="project-img" alt="project">
+            <p class="project-title">Tic Tac Toe Game</p>
+          </a>
+        </div>
+        <a href="https://codepen.io/FreeCodeCamp/" class="btn" data-i18n="showAll">Show All ></a>
+      </section>
+
+      <section id="faq" class="faq">
+        <h2 data-i18n="faqTitle">FAQ</h2>
+        <details>
+          <summary data-i18n="faq1q">What tech do you use?</summary>
+          <p data-i18n="faq1r">I use HTML, CSS, JS, PHP, and SQL.</p>
+        </details>
+        <details>
+          <summary data-i18n="faq2q">Do you work freelance?</summary>
+          <p data-i18n="faq2r">Yes, I'm available for freelance projects.</p>
+        </details>
+      </section>
+
+      <section id="timeline" class="timeline">
+        <h2 data-i18n="timelineTitle">Timeline</h2>
+        <ul>
+          <li><strong>2024</strong> - Started web development journey</li>
+          <li><strong>2025</strong> - Built portfolio & learned frontend</li>
+          <li><strong>2026</strong> - Plan to apply abroad for internship</li>
+        </ul>
+      </section>
+
+      <section id="blog" class="blog">
+        <h2 data-i18n="blogTitle">Blog</h2>
+        <article>
+          <h3 data-i18n="blog1t">Why I love building UI</h3>
+          <p data-i18n="blog1p">Designing interactive experiences gives me joy and creativity.</p>
+        </article>
+        <article>
+          <h3 data-i18n="blog2t">Learning every day</h3>
+          <p data-i18n="blog2p">Every line of code is a step toward mastery.</p>
+        </article>
+      </section>
+
+      <section class="contact" id="contact-section">
+        <div class="contact-div-info">
+          <h2 data-i18n="contact">Let's work together...</h2>
+        </div>
+        <div class="contact-div-links">
+          <ul class="contact-links">
+            <li><a href=""><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+            <li><a href=""><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li><a id="profile-link" href="" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            <li><a href=""><i class="fa-solid fa-envelope"></i> Send Me Mail</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Ahmed Boutarfa. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

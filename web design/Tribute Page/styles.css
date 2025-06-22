@@ -1,0 +1,110 @@
+:root{
+    --blue:#0066cc;
+    --blue-sky:#3399ff;
+    --dark-gray1:#333;
+    --dark-gray2:#444;
+    --white:#fff;
+    --shadow:rgba(0, 0, 0, 0.2);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: var(--dark-gray1);
+    padding: 20px;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+    gap: 30px;
+}
+#tit-div {
+    text-align: center;
+}
+#title {
+    font-size: 3rem;
+    color: var(--blue);
+}
+#bio {
+    font-size: 1.2rem;
+    color: var(--dark-gray2);
+    margin-top: 10px;
+}
+#img-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+#image {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px var(--shadow);
+}
+#img-caption p{
+    display: flex;
+    justify-content: space-evenly;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+section {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--shadow);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+section h2 {
+    color: #222;
+    font-size: 1.5rem;
+    border-left: 4px solid var(--blue);
+    padding-left: 10px;
+}
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+section blockquote {
+    background-color: #e0f0ff;
+    border-left: 4px solid var(--blue-sky);
+    padding: 10px 15px;
+    font-style: italic;
+    font-size: 1.05rem;
+}
+#link-div {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+#link-div a {
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+#link-div a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 600px) {
+    #img-div {
+        flex-direction: column;  
+    }
+    #title {
+        font-size: 2.2rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+}

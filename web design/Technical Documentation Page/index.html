@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PHP Introduction</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <button id="open-nav" class="nav-toggle">☰</button>
+    <nav id="navbar">
+      <header>PHP Documentation</header>
+      <button id="theme-toggle">🌓 Mode</button>
+      <button id="close-nav" class="nav-toggle close">×</button>
+      <div id="scroll">
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#What_You_Should_Already_Know">What You Should Already Know</a>
+        <a class="nav-link" href="#PHP_and_HTML">PHP and HTML</a>
+        <a class="nav-link" href="#Variables">Variables</a>
+        <a class="nav-link" href="#Variable_Scope">Variable Scope</a>
+        <a class="nav-link" href="#Constants">Constants</a>
+        <a class="nav-link" href="#Data_Types">Data Types</a>
+        <a class="nav-link" href="#if...else_Statement">if...else Statement</a>
+        <a class="nav-link" href="#while_Loop">while Loop</a>
+        <a class="nav-link" href="#Functions">Functions</a>
+        <a class="nav-link" href="#Superglobals">Superglobals</a>
+        <a class="nav-link" href="#Forms_in_PHP">Forms in PHP</a>
+        <a class="nav-link" href="#Database_Connection">Database Connection</a>
+        <a class="nav-link" href="#Useful_Resources">Useful Resources</a>
+      </div>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p><strong>PHP</strong> (Hypertext Preprocessor) is a widely-used, open-source, server-side scripting language. It is especially suited for web development and can be embedded into HTML. PHP scripts are executed on the server, and the result is sent to the browser as plain HTML.</p>
+        <p>You can use PHP to create dynamic page content, collect form data, send/receive cookies, and interact with databases. PHP is known for its simplicity and flexibility.</p>
+      </section>
+
+      <section class="main-section" id="What_You_Should_Already_Know">
+        <header>What You Should Already Know</header>
+        <p>Before learning PHP, it helps to have:</p>
+        <ul>
+          <li>A basic understanding of the Internet and the World Wide Web (WWW)</li>
+          <li>A solid knowledge of <strong>HTML</strong></li>
+          <li>Some programming experience (optional but helpful)</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="PHP_and_HTML">
+        <header>PHP and HTML</header>
+        <p>PHP can be embedded directly into HTML code. The PHP code is enclosed in <code>&lt;?php ... ?&gt;</code> tags and executed on the server.</p>
+        <h3>Example:</h3>
+        <div class="editeur">
+          <code>
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;body&gt;<br><br>
+
+&lt;?php<br>
+&nbsp;&nbsp;echo "Hello, World!";<br>
+?&gt;<br><br>
+
+&lt;/body&gt;<br>
+&lt;/html&gt;
+          </code>
+        </div>
+        <p>When this script runs, the browser will receive only the text:<br><code>Hello, World!</code></p>
+      </section>
+
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>In PHP, all variables start with the <code>$</code> symbol. You don’t need to declare the data type of a variable.</p>
+        <h3>Example:</h3>
+        <div class="editeur">
+          <code>
+&lt;?php<br>
+&nbsp;&nbsp;$name = "Alice";<br>
+&nbsp;&nbsp;$age = 25;<br>
+&nbsp;&nbsp;$isActive = true;<br>
+?&gt;
+          </code>
+        </div>
+      </section>
+
+      <section class="main-section" id="Variable_Scope">
+        <header>Variable Scope</header>
+        <ul>
+          <li><strong>Global:</strong> Declared outside functions, accessible everywhere.</li>
+          <li><strong>Local:</strong> Declared inside a function, accessible only within that function.</li>
+        </ul>
+        <p>To access a global variable inside a function, use the <code>global</code> keyword:</p>
+        <div class="editeur">
+          <code>
+&lt;?php<br>
+&nbsp;&nbsp;$greeting = "Hello";<br><br>
+&nbsp;&nbsp;function sayHello() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;global $greeting;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;echo $greeting;<br>
+&nbsp;&nbsp;}<br>
+?&gt;
+          </code>
+        </div>
+      </section>
+
+      <section class="main-section" id="Constants">
+        <header>Constants</header>
+        <p>You can define a constant using <code>define()</code> or <code>const</code>. Constants cannot be changed once set.</p>
+        <div class="editeur">
+          <code>
+&lt;?php<br>
+&nbsp;&nbsp;define("PI", 3.14);<br>
+&nbsp;&nbsp;const TAX = 0.2;<br>
+?&gt;
+          </code>
+        </div>
+        <p>Constants are automatically global.</p>
+      </section>
+
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <p>PHP supports the following data types:</p>
+        <ul>
+          <li><strong>String</strong> - <code>"Hello"</code></li>
+          <li><strong>Integer</strong> - <code>42</code></li>
+          <li><strong>Float (Double)</strong> - <code>3.14159</code></li>
+          <li><strong>Boolean</strong> - <code>true</code> or <code>false</code></li>
+          <li><strong>Array</strong> - <code>array(1, 2, 3)</code></li>
+          <li><strong>Object</strong></li>
+          <li><strong>NULL</strong></li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="if...else_Statement">
+        <header>if...else Statement</header>
+        <p>PHP uses standard control structures like <code>if</code>, <code>else</code>, and <code>elseif</code>.</p>
+        <div class="editeur">
+          <code>
+&lt;?php<br>
+&nbsp;&nbsp;$age = 20;<br><br>
+&nbsp;&nbsp;if ($age &gt;= 18) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;echo "Adult";<br>
+&nbsp;&nbsp;} else {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;echo "Minor";<br>
+&nbsp;&nbsp;}<br>
+?&gt;
+          </code>
+        </div>
+      </section>
+
+      <section class="main-section" id="while_Loop">
+        <header>while Loop</header>
+        <div class="editeur">
+          <code>
+&lt;?php<br>
+&nbsp;&nbsp;$i = 0;<br><br>
+&nbsp;&nbsp;while ($i &lt; 3) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;echo $i;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;$i++;<br>
+&nbsp;&nbsp;}<br>
+?&gt;
+          </code>
+        </div>
+      </section>
+
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>Functions are declared using the <code>function</code> keyword.</p>
+        <div class="editeur">
+          <code>
+&lt;?php<br>
+&nbsp;&nbsp;function square($number) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return $number * $number;<br>
+&nbsp;&nbsp;}<br><br>
+&nbsp;&nbsp;echo square(5); // Outputs 25<br>
+?&gt;
+          </code>
+        </div>
+        <p><strong>Note</strong>: Primitive types (like numbers) are passed by value. Objects and arrays can be passed by reference if needed.</p>
+      </section>
+
+      <section class="main-section" id="Superglobals">
+        <header>PHP Superglobals</header>
+        <p>PHP provides several built-in superglobal variables which are accessible from anywhere in the script:</p>
+        <ul>
+          <li><code>$_GET</code> - Data from the URL</li>
+          <li><code>$_POST</code> - Data from a form</li>
+          <li><code>$_SERVER</code> - Server and execution information</li>
+          <li><code>$_SESSION</code> - Persistent session data</li>
+          <li><code>$_COOKIE</code> - Data stored on the client</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Forms_in_PHP">
+        <header>Handling Forms in PHP</header>
+        <p>PHP can retrieve form data using the <code>$_GET</code> or <code>$_POST</code> superglobals.</p>
+        <h3>HTML:</h3>
+        <div class="editeur">
+          <code>
+&lt;form method="post" action="welcome.php"&gt;<br>
+&nbsp;&nbsp;Name: &lt;input type="text" name="name"&gt;<br>
+&nbsp;&nbsp;&lt;input type="submit"&gt;<br>
+&lt;/form&gt;
+          </code>
+        </div>
+        <h3>PHP (welcome.php):</h3>
+        <div class="editeur">
+          <code>
+&lt;?php<br>
+&nbsp;&nbsp;$name = $_POST['name'];<br>
+&nbsp;&nbsp;echo "Hello, $name";<br>
+?&gt;
+          </code>
+        </div>
+      </section>
+
+      <section class="main-section" id="Database_Connection">
+        <header>Connecting to a Database</header>
+        <p>PHP can connect to MySQL using <code>mysqli</code> or <code>PDO</code>.</p>
+        <div class="editeur">
+          <code>
+&lt;?php<br>
+&nbsp;&nbsp;$conn = new mysqli("localhost", "username", "password", "myDB");<br><br>
+&nbsp;&nbsp;if ($conn-&gt;connect_error) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;die("Connection failed: " . $conn-&gt;connect_error);<br>
+&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;echo "Connected successfully";<br>
+?&gt;
+          </code>
+        </div>
+      </section>
+
+      <section class="main-section" id="Useful_Resources">
+        <header>Useful Resources</header>
+        <ul>
+          <li><a href="https://www.php.net/manual/en/">PHP Manual (official)</a></li>
+          <li><a href="https://www.w3schools.com/php/">W3Schools PHP Tutorial</a></li>
+          <li><a href="https://www.learn-php.org/">Learn-PHP.org</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
