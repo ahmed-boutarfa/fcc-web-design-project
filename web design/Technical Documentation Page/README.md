@@ -4,7 +4,7 @@ This project is a **Technical Documentation Page** about the PHP programming lan
 
 ## 🌐 Live Demo
 
-[👉 View the demo](https://codepen.io/ahmed-boutarfa/pen/QwbJqRP)
+[👉 View the demo](https://codepen.io/ahmed-boutarfa/full/QwbJqRP)
 
 ## 📌 Features
 
