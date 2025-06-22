@@ -50,19 +50,27 @@ The page showcases my web development journey, featured projects, personal blog,
 ## 📂 Project Structure
 
 📁 portfolio/
+
 ├── index.html # Main HTML structure
+
 ├── styles.css # All custom styles
+
 ├── app.js # JS logic: dark mode, translations, animations
+
 └── README.md # Project documentation
 
-##🌍 Multilingual Support
+---
+
+## 🌍 Multilingual Support
 
 const translations = {
   en: { title: "My Portfolio", role: "a web developer" },
   fr: { title: "Mon Portfolio", role: "développeur web" }
 }
 
-##🧠 What I Learned
+---
+
+## 🧠 What I Learned
 
 --Designing clean UI with CSS custom properties
 
@@ -76,7 +84,10 @@ const translations = {
 
 --Enhancing accessibility and semantic structure
 
-##📬 Contact
+---
+
+## 📬 Contact
+
 
 Ahmed Boutarfa
 
