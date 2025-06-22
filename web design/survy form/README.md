@@ -25,7 +25,7 @@ It allows users to fill out a form giving feedback about their experience with t
 
 ## 🚀 Live Demo
 
-🔗 [Click here to see the live version](https://codepen.io/full?template=ByNGwqP)
+🔗 [Click here to see the live version](https://codepen.io/ahmed-boutarfa/full/ByNGwqP)
 
 ---
 
